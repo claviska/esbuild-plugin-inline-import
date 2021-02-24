@@ -1,0 +1,24 @@
+{
+  "name": "esbuild-plugin-inline-import",
+  "version": "1.0.0",
+  "description": "A plugin to inline and optionally transform static imports with esbuild.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claviska/esbuild-inline-import.git"
+  },
+  "keywords": [
+    "esbuild",
+    "plugin",
+    "import"
+  ],
+  "author": "Cory LaViska",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claviska/esbuild-inline-import/issues"
+  },
+  "homepage": "https://github.com/claviska/esbuild-inline-import#readme"
+}

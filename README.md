@@ -1,6 +1,6 @@
 # Inline Import Plugin for esbuild
 
-This plugin lets you inline the contents of static imports. It will turn this:
+This plugin lets you inline the contents of select static imports. It will turn this:
 
 ```js
 import string from 'inline:./path/to/file.ext';
@@ -24,7 +24,7 @@ npm install --save-dev esbuild-plugin-inline-import
 
 ## Usage
 
-Always include this plugin _before_ other plugins, otherwise you'll see resolution errors.
+Always include this plugin _before_ other plugins, otherwise you may see resolution errors.
 
 ```js
 const esbuild = require('esbuild');
@@ -79,7 +79,7 @@ const plugins = [
 
 ### Stacking
 
-You can stack the plugin multiple times to process different types of imports. Remember that this plugin should run _before_ others, otherwise you'll see resolution errors.
+You can stack the plugin multiple times to process different types of imports. Remember that this plugin should run _before_ others, otherwise you may see resolution errors.
 
 ```js
 const plugins = [
@@ -95,7 +95,7 @@ const plugins = [
 ];
 ```
 
-### Sass
+### Inline Sass
 
 The inspiration for this plugin came from the need to parse and inline web component styles. While it may be heavy, sometimes there's no other way. Note that expensive operations like this can impact esbuild's performance. If you're seeing a slowdown, remove the plugin and compare the result. Chances are, the bottleneck is in your transform code.
 

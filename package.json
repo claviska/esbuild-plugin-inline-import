@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/claviska/esbuild-inline-import.git"
+    "url": "git+https://github.com/claviska/esbuild-plugin-inline-import.git"
   },
   "keywords": [
     "esbuild",
@@ -18,7 +18,7 @@
   "author": "Cory LaViska",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/claviska/esbuild-inline-import/issues"
+    "url": "https://github.com/claviska/esbuild-plugin-inline-import/issues"
   },
-  "homepage": "https://github.com/claviska/esbuild-inline-import#readme"
+  "homepage": "https://github.com/claviska/esbuild-plugin-inline-import#readme"
 }

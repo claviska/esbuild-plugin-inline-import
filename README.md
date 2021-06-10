@@ -84,11 +84,11 @@ You can stack the plugin multiple times to process different types of imports. R
 ```js
 const plugins = [
   // Inline text with no transforms
-  inlinePlugin({
+  inlineImportPlugin({
     filter: /^text:/
   }),
   // Inline CSS and prepend license info
-  inlinePlugin({
+  inlineImportPlugin({
     filter: /^css:/,
     transform: contents => `/** Licensed under the MIT license */\n${contents}`
   })
@@ -103,7 +103,7 @@ The inspiration for this plugin came from the need to parse and inline web compo
 const sass = require('sass');
 
 const plugins = [
-  inlinePlugin({
+  inlineImportPlugin({
     filter: /^sass:/,
     transform: async (contents, args) => {
       return await new Promise((resolve, reject) => {

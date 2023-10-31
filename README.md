@@ -137,3 +137,16 @@ import styles from 'sass:./components/button/button.scss';
 const styles = '[resulting CSS styles here]';
 ```
 
+## Changelog
+
+### 1.0.2
+
+- Added TypeScript types [#2](https://github.com/claviska/esbuild-plugin-inline-import/pull/2)
+
+### 1.0.1
+
+- Bug fixes
+
+### 1.0.0 
+
+- Initial release

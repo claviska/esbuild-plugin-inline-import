@@ -51,6 +51,7 @@ module.exports = options => {
 
         return {
           contents,
+          watchFiles: [args.path],
           loader: 'text'
         };
       });

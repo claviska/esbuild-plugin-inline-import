@@ -1,6 +1,6 @@
 {
   "name": "esbuild-plugin-inline-import",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A plugin to inline and optionally transform static imports with esbuild.",
   "main": "index.js",
   "scripts": {

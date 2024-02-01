@@ -2,7 +2,7 @@
 
 import { Plugin } from 'esbuild';
 
-function esbuildPluginInlineImport(options?: {
+declare function esbuildPluginInlineImport(options?: {
   /**
    *  A regex filter to match the desired import. Defaults to imports that start with `inline:`, e.g.
    *  import 'inline:./file.ext';

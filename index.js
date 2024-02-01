@@ -34,10 +34,16 @@ module.exports = options => {
   return {
     name: 'esbuild-inline-plugin',
     setup(build) {
-      build.onResolve({ filter }, args => {
-        const realPath = args.path.replace(filter, '');
+      build.onResolve({ filter }, async args => {
+        let filePath = path.resolve(args.resolveDir, args.path);
+        try {
+          await fs.access(filePath);
+        } catch {
+          filePath = path.resolve(args.resolveDir, args.path.replace(filter, ''));
+        }
+
         return {
-          path: path.resolve(args.resolveDir, realPath),
+          path: filePath,
           namespace
         };
       });
